@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Home_refresh_bg" translatesAutoresizingMaskIntoConstraints="NO" id="vPw-EQ-Cb5">
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="daq-qo-XfP" customClass="RYFLockView">
+                                <rect key="frame" x="0.0" y="124" width="320" height="320"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="daq-qo-XfP" secondAttribute="height" multiplier="1:1" id="Jwc-ya-x8Z"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="daq-qo-XfP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="881-LP-ev1"/>
+                            <constraint firstItem="vPw-EQ-Cb5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="K7w-cH-mku"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vPw-EQ-Cb5" secondAttribute="bottom" id="Pcx-y3-Lz5"/>
+                            <constraint firstAttribute="trailing" secondItem="vPw-EQ-Cb5" secondAttribute="trailing" id="kMZ-tn-rbS"/>
+                            <constraint firstItem="daq-qo-XfP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="oOw-FH-nwl"/>
+                            <constraint firstItem="vPw-EQ-Cb5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="rG6-zp-OyU"/>
+                            <constraint firstAttribute="trailing" secondItem="daq-qo-XfP" secondAttribute="trailing" id="rJ6-wJ-vin"/>
+                            <constraint firstItem="daq-qo-XfP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sGc-M8-EGU"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Home_refresh_bg" width="640" height="1008"/>
+    </resources>
+</document>
